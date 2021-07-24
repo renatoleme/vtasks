@@ -1,0 +1,11 @@
+.tlp-widget {
+    z-index: 1;
+}
+
+.v-tasks {
+    color: blue;
+}
+
+.holder {
+    color: red;
+}

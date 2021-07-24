@@ -1,0 +1,3 @@
+[submodule "example/widgets/tracktatus"]
+	path = example/widgets/tracktatus
+	url = https://github.com/renatoleme/tracktatus

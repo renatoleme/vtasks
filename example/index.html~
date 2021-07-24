@@ -1,0 +1,61 @@
+<html>
+
+    <head>
+
+        <title>vtasks.js</title>
+        <script src="https://unpkg.com/vue@next"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/vue@next"></script>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="widgets/tracktatus/assets/styles.css" />
+        <link rel="stylesheet" href="widgets/tracktatus/assets/tractatus-tree.css" />
+        <link rel="stylesheet" href="widgets/vtasks/assets/styles.css" />
+        <link rel="stylesheet" href="assets/styles.css" />
+    </head>
+
+    <body>
+
+        <div id="app">
+ghghgj
+            
+            <div id="vtasks" class="v-tasks" ref="vtasks" >
+                
+                asdsadasfdfsdf {{ oi }}
+                
+                <holder ref="holder" class="holder" />
+
+            </div>
+            
+            <div class="container"
+                 ref="container"
+                 @mousemove="mouseMove($event)"
+                 @mouseup="moveEnd">
+
+                
+                
+                <tracktatus class="tlp-widget"
+                            ref="tbox"
+                            v-on:move-start="moveStart"
+                            v-on:minimize-window="minimizeWindow" />
+            </div>
+
+            
+        </div>
+
+      
+        
+        
+        <script src="./widgets/vtasks/main.js"></script>
+        <script src="./widgets/vtasks/components/holder.js"></script>
+        <script src="./widgets/tracktatus/main.js"></script>
+        <script src="./widgets/tracktatus/components/tracktatus.js"></script>
+        
+        <script>
+
+         vtasks.mount('#vtasks')
+         app.mount('#app')
+         
+        </script>
+    </body>
+    
+</html>

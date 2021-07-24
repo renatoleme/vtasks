@@ -1,0 +1,53 @@
+
+
+
+.holder {
+    color: gray;
+    height: 100%;
+    text-align: center;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 9%, rgba(65,65,65,1) 100%, rgba(50,50,50,1) 100%);
+    margin: -10;
+    width: 70px;
+    padding: 8px;
+    position: absolute;
+    box-shadow: 0 0 1em black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.vtask-credit {
+    margin-bottom: 20px;
+      margin-top: auto;
+}
+
+
+.holder-item {
+    margin-top: 20px;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    box-shadow: 0 0 1em gray;
+    border-radius: 50%;
+    border: none;
+    object-fit: cover;
+
+}
+
+.task-icon {
+    vertical-align: middle;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 1em gold;
+    object-fit: cover;
+}
+
+.mask {
+    object-fit: cover;
+    width: 100%;
+    bakground-color: yellow;
+}

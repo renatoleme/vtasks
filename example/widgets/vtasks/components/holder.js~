@@ -1,0 +1,16 @@
+vtasks.component('holder', {
+    data() {
+        return {
+            tasks: [1,2,3,4,5]
+        }
+    },
+    template: `<div>{{ this.tasks }}</div>`,
+    methods: {
+        pushTask() {
+            console.log(this.tasks)
+            this.tasks.push(89)
+        }
+    }
+        
+    
+})
