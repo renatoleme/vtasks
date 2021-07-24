@@ -6,7 +6,6 @@ const vtasks = Vue.createApp({
     },
     methods: {
         addTask(event) {
-            console.log('[main.js] Vtasks')
             this.$el.parentNode.appendChild(event.target)
             if (event.target.id === 'clickable')
                 this.$refs.holder.pushTask()
