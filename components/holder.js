@@ -5,11 +5,13 @@ app.component('holder', {
         }
     },
     template: `<div class="holder">
+                 <div class="tasks">
                   <div v-for="(task, index) in this.tasks">
                    <div @mouseover="overItemMask(index)" @mouseout="removeItemMask(index)" class="mask" :style="task.style">
                      <img :src="this.assetsPath(index)"  class="holder-item" @click="this.restoreWindow(index)" />
                      <p class="task-name"><b>{{ task.name }}</b></p>
                    </div>                      
+                  </div>
                   </div>
                   <a href="https://github.com/renatoleme/vtasks" class="vtask-credit">vtasks.js</a>
                </div>`,

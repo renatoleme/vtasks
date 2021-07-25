@@ -18,6 +18,17 @@
 
 }
 
+.tasks::-webkit-scrollbar {
+  display: none;
+}
+
+.tasks {
+    height: 95%;
+    overflow-y: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 .task-name {
     white-space: nowrap;
     overflow: hidden;
