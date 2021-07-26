@@ -26,6 +26,7 @@ app.component('holder', {
             return this.tasks[index].icon
         },
         restoreWindow(index) {
+            console.log(this.tasks[0])
             this.tasks[index].trigger()
             this.tasks.splice(index, 1)
         },
