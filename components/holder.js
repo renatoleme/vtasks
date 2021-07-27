@@ -26,9 +26,11 @@ app.component('holder', {
             return this.tasks[index].icon
         },
         restoreWindow(index) {
-            console.log(this.tasks[0])
+            const info = {ref: this.tasks[index].taskId}
             this.tasks[index].trigger()
+            this.$emit('set-focus', info)
             this.tasks.splice(index, 1)
+
         },
         pushTask(trigger) {
             trigger.style = {opacity: 1};
