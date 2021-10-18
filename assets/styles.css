@@ -7,7 +7,7 @@
     text-align: center;
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,1) 9%, rgba(65,65,65,1) 100%, rgba(50,50,50,1) 100%);
-    margin: -10;
+    margin: -10px;
     width: 70px;
     padding: 8px;
     position: absolute;
